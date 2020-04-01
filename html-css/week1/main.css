@@ -1,0 +1,186 @@
+body {
+    font: 15px/1.5 Avenir Next;
+    background-color: rgb(58, 55, 55);
+    margin: 0;
+    padding: 0;
+}
+
+
+/* intro */
+
+.Introduction {
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.Introduction h1 {
+    text-align: center;
+    font-weight: 200;
+    font-size: 60px;
+    justify-content: center;
+    background-image: linear-gradient(to right, rgba(4, 233, 233, 0.89) 40%, #550575 80%);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+p {
+    font-size: medium;
+    text-align: center;
+    color: rgba(4, 233, 233, 0.89);
+    margin-bottom: 0;
+}
+
+
+/* education details */
+
+.education {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+    padding: 5%;
+}
+
+.education h1 {
+    text-align: center;
+    font-weight: 400;
+    font-size: 20px;
+    justify-content: center;
+    padding-top: 0px;
+    background-image: linear-gradient(to right, rgba(4, 233, 233, 0.89) 40%, #550575 80%);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+ul {
+    font-size: 20px;
+    text-align: left;
+    font-weight: 200;
+    padding: 0;
+    margin: 50px;
+    text-decoration: none;
+    color: white;
+}
+
+
+/* work experiences */
+
+.work-experience {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+    padding: 5%;
+}
+
+.work-experience h1 {
+    text-align: center;
+    font-weight: 400;
+    font-size: 20px;
+    justify-content: center;
+    background-image: linear-gradient(to right, rgba(4, 233, 233, 0.89) 40%, #550575 80%);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+
+/* skills */
+
+.skills_class {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+    padding: 5%;
+}
+
+.skills_class h1 {
+    text-align: center;
+    font-weight: 400;
+    font-size: 20px;
+    justify-content: center;
+    background-image: linear-gradient(to right, rgba(4, 233, 233, 0.89) 40%, #550575 80%);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+
+/* about  */
+
+.about {
+    margin-top: 5%;
+    align-items: center;
+}
+
+.about h1 {
+    text-align: center;
+    font-weight: 400;
+    font-size: 20px;
+    justify-content: center;
+    background-image: linear-gradient(to right, rgba(4, 233, 233, 0.89) 40%, #550575 80%);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.about p {
+    text-align: justify;
+    padding: 20px;
+    margin-left: auto;
+    font-size: 16px;
+    font-weight: 200;
+    margin: 0;
+    color: white;
+}
+
+
+/* contact */
+
+.contact-me {
+    position: relative;
+    height: 120px;
+    overflow: hidden;
+    padding: 40px;
+}
+
+.contact-me h1 {
+    text-align: center;
+    font-weight: 400;
+    font-size: 20px;
+    justify-content: center;
+    background-image: linear-gradient(to right, rgba(4, 233, 233, 0.89) 40%, #550575 80%);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.logos {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.contact-me a {
+    font-size: 14px;
+    color: rgb(240, 240, 240);
+}
+
+.contact-me a:hover {
+    color: black;
+}
+
+
+/* footer */
+
+footer {
+    background: black;
+    opacity: 0.87;
+    padding: 10px;
+    width: auto;
+    margin-top: 0px;
+    text-align: center;
+    font-size: 10px;
+    font-weight: lighter;
+}
