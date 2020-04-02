@@ -10,7 +10,6 @@ body {
 
 .Introduction {
     position: relative;
-    overflow: hidden;
     text-align: center;
     margin-top: 30px;
 }
@@ -39,7 +38,6 @@ p {
 .education {
     position: relative;
     height: 200px;
-    overflow: hidden;
     padding: 5%;
 }
 
@@ -71,7 +69,6 @@ ul {
 .work-experience {
     position: relative;
     height: 200px;
-    overflow: hidden;
     padding: 5%;
 }
 
@@ -92,7 +89,6 @@ ul {
 .skills_class {
     position: relative;
     height: 200px;
-    overflow: hidden;
     padding: 5%;
 }
 
@@ -142,7 +138,6 @@ ul {
 .contact-me {
     position: relative;
     height: 120px;
-    overflow: hidden;
     padding: 40px;
 }
 
