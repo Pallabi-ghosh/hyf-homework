@@ -1,8 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font: 15px/1.5 Avenir Next;
     background-color: rgb(58, 55, 55);
+}
+
+
+/* container */
+
+.Container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.Container a {
+    color: white;
+    text-decoration: none;
+    margin: 1vw;
+}
+
+.Container a:hover {
+    color: black;
+}
+
+.Container ul {
+    display: flex;
+    list-style-type: none;
+    width: auto;
+    height: auto;
     margin: 0;
-    padding: 0;
+    padding: 20px;
 }
 
 
@@ -11,7 +42,7 @@ body {
 .Introduction {
     position: relative;
     text-align: center;
-    margin-top: 30px;
+    height: 400px;
 }
 
 .Introduction h1 {
@@ -32,12 +63,18 @@ p {
     margin-bottom: 0;
 }
 
+.Introduction img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
 
 /* education details */
 
 .education {
     position: relative;
-    height: 200px;
+    height: 300px;
     padding: 5%;
 }
 
@@ -68,7 +105,7 @@ ul {
 
 .work-experience {
     position: relative;
-    height: 200px;
+    height: 300px;
     padding: 5%;
 }
 
@@ -88,7 +125,7 @@ ul {
 
 .skills_class {
     position: relative;
-    height: 200px;
+    height: 400px;
     padding: 5%;
 }
 
@@ -107,8 +144,9 @@ ul {
 /* about  */
 
 .about {
-    margin-top: 5%;
+    margin: 5%;
     align-items: center;
+    height: 300px;
 }
 
 .about h1 {
@@ -137,7 +175,7 @@ ul {
 
 .contact-me {
     position: relative;
-    height: 120px;
+    height: 200px;
     padding: 40px;
 }
 
@@ -150,6 +188,7 @@ ul {
     color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
+    padding-bottom: 20px;
 }
 
 .logos {
