@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font: 15px/1.5 Avenir Next;
+    background-color: white;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: flex-start;
+    padding-left: 20px;
+    margin: 20px;
+}
+
+.navbar {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    text-decoration: none;
+    padding-right: 10%;
+}
