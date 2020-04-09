@@ -71,10 +71,16 @@ a:hover {
 
 /* picture */
 
-.picture {
+.picture img {
     overflow-y: hidden;
-    height: auto;
+    height: 500px;
     width: 100%;
+}
+
+@media screen and (max-width: 900px) {
+    .picture img {
+        height: 300px;
+    }
 }
 
 
@@ -114,16 +120,6 @@ a:hover {
     margin: 2vw;
 }
 
-@media screen and (min-width: 900px) {
-    .right-half {
-        width: 100%;
-    }
-    .right-half img {
-        padding: 1.2vw;
-        width: 6vw;
-    }
-}
-
 .right-half {
     font-size: 15px;
     text-align: justify;
@@ -131,8 +127,18 @@ a:hover {
 }
 
 .right-half img {
-    padding: 1.2vw;
-    width: 4vw;
+    padding: 2.5vw;
+    width: 10vw;
+}
+
+@media screen and (min-width: 900px) {
+    .right-half {
+        width: 100%;
+    }
+    .right-half img {
+        padding: 1.2vw;
+        width: 4vw;
+    }
 }
 
 
