@@ -1,0 +1,263 @@
+html,
+body {
+    font: 15px/1.5 Avenir Next;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    border: 0px;
+}
+
+
+/* introduction */
+
+@media screen and (max-width: 900px) {
+    .introduction {
+        text-align: center;
+    }
+}
+
+.introduction {
+    display: block;
+    background-color: rgb(233, 233, 235);
+    padding: 30px;
+}
+
+.introduction h1 {
+    color: black;
+    align-items: center;
+    align-self: flex-start;
+}
+
+.introduction p {
+    color: gray;
+    align-items: center;
+    align-self: flex-start;
+}
+
+
+/* navbar details */
+
+@media screen and (max-width: 900px) {
+    .navigation-links {
+        flex-direction: column;
+        text-align: left;
+        width: 100%;
+        margin-left: 8%;
+    }
+}
+
+.navbar_details {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+}
+
+.navigation-links {
+    display: flex;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    margin: 2vw;
+}
+
+a:hover {
+    color: gray;
+}
+
+
+/* picture */
+
+.picture {
+    overflow-y: hidden;
+    height: auto;
+    width: 100%;
+}
+
+
+/* about web industry */
+
+.flexer {
+    max-width: 70%;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 900px) {
+    .flex {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .left-half {
+        width: 100%;
+        text-align: justify;
+        font-size: 2vw;
+    }
+}
+
+.left-half {
+    /* included logos and the gallery */
+    text-align: justify;
+    font-size: 10px;
+    margin: 2vw;
+}
+
+@media screen and (min-width: 900px) {
+    .right-half {
+        width: 100%;
+    }
+    .right-half img {
+        padding: 1.2vw;
+        width: 6vw;
+    }
+}
+
+.right-half {
+    font-size: 15px;
+    text-align: justify;
+    margin: 1.5vw;
+}
+
+.right-half img {
+    padding: 1.2vw;
+    width: 4vw;
+}
+
+
+/* left and right flex */
+
+.left-flex {
+    width: 50%;
+}
+
+.right-flex {
+    width: 50%;
+}
+
+
+/* footer */
+
+footer {
+    background-color: rgb(112, 66, 219);
+    padding: 60px 0;
+}
+
+.communicate {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 900px) {
+    .communicate {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+
+/* find us is the first div */
+
+.find-us {
+    color: white;
+    flex-direction: column;
+    margin: 3vw;
+    width: 30%;
+}
+
+@media only screen and (max-width: 900px) {
+    .find-us {
+        width: 80%;
+        margin-bottom: 30px;
+    }
+}
+
+.find-us img {
+    width: 60%;
+    display: inline-block;
+}
+
+#one {
+    font-weight: bold;
+}
+
+
+/* about the page */
+
+.about {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin: 3vw;
+    width: 20%;
+}
+
+@media only screen and (max-width: 900px) {
+    .about {
+        width: 80%;
+        margin-bottom: 30px;
+    }
+}
+
+.about p {
+    padding: 0;
+    margin: 0cm;
+}
+
+
+/* archives is the second one with Ul */
+
+.archives {
+    color: white;
+    text-align: left;
+    margin: 3vw;
+    width: 20%;
+}
+
+@media only screen and (max-width: 900px) {
+    .archives {
+        width: 80%;
+        margin-bottom: 30px;
+    }
+}
+
+.archives p {
+    padding: 0;
+    margin: 0cm;
+}
+
+
+/* navigation is the thired one with Ul */
+
+.navigation {
+    color: white;
+    text-align: left;
+    margin: 3vw;
+    width: 20%;
+}
+
+@media only screen and (max-width: 900px) {
+    .navigation {
+        width: 80%;
+        margin-bottom: 30px;
+    }
+}
+
+.navigation p {
+    padding: 0;
+    margin: 0cm;
+}
