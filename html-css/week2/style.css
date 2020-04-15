@@ -1,10 +1,10 @@
 html,
 body {
     font: 15px/1.5 Avenir Next;
-    margin: 0px;
-    padding: 0px;
+    margin: 0em;
+    padding: 0em;
     width: 100%;
-    border: 0px;
+    border: 0em;
 }
 
 
@@ -19,7 +19,7 @@ body {
 .introduction {
     display: block;
     background-color: rgb(233, 233, 235);
-    padding: 30px;
+    padding: 1.875em;
 }
 
 .introduction h1 {
@@ -73,33 +73,33 @@ a:hover {
 
 .picture img {
     overflow-y: hidden;
-    height: 500px;
+    height: 31.25em;
     width: 100%;
 }
 
 @media screen and (max-width: 900px) {
     .picture img {
-        height: 300px;
+        height: 18.75em;
     }
 }
 
 
 /* about web industry */
 
-.flexer {
+.industry {
     max-width: 70%;
-    margin: 50px auto;
+    margin: 3.125em auto;
     display: flex;
     flex-direction: column;
 }
 
-.flex {
+.industry-details {
     display: flex;
     flex-direction: column;
 }
 
 @media screen and (min-width: 900px) {
-    .flex {
+    .industry-details {
         display: flex;
         flex-direction: row;
     }
@@ -116,12 +116,12 @@ a:hover {
 .left-half {
     /* included logos and the gallery */
     text-align: justify;
-    font-size: 10px;
+    font-size: 0.625em;
     margin: 2vw;
 }
 
 .right-half {
-    font-size: 15px;
+    font-size: 0.9375em;
     text-align: justify;
     margin: 1.5vw;
 }
@@ -142,14 +142,25 @@ a:hover {
 }
 
 
-/* left and right flex */
+/* about gallery and logos */
 
-.left-flex {
-    width: 50%;
+.gallery {
+    max-width: 70%;
+    margin: 3.125em auto;
+    display: flex;
+    flex-direction: column;
 }
 
-.right-flex {
-    width: 50%;
+.logos-gallery {
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 900px) {
+    .logos-gallery {
+        display: flex;
+        flex-direction: row;
+    }
 }
 
 
@@ -157,7 +168,7 @@ a:hover {
 
 footer {
     background-color: rgb(112, 66, 219);
-    padding: 60px 0;
+    padding: 3.75em 0;
 }
 
 .communicate {
@@ -187,7 +198,7 @@ footer {
 @media only screen and (max-width: 900px) {
     .find-us {
         width: 80%;
-        margin-bottom: 30px;
+        margin-bottom: 1.875em;
     }
 }
 
@@ -215,7 +226,7 @@ footer {
 @media only screen and (max-width: 900px) {
     .about {
         width: 80%;
-        margin-bottom: 30px;
+        margin-bottom: 1.875em;
     }
 }
 
@@ -237,7 +248,7 @@ footer {
 @media only screen and (max-width: 900px) {
     .archives {
         width: 80%;
-        margin-bottom: 30px;
+        margin-bottom: 1.875em;
     }
 }
 
@@ -259,7 +270,7 @@ footer {
 @media only screen and (max-width: 900px) {
     .navigation {
         width: 80%;
-        margin-bottom: 30px;
+        margin-bottom: 1.875em;
     }
 }
 
