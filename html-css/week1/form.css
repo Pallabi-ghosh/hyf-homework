@@ -1,0 +1,92 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.order-summary {
+    width: 90%;
+    color: white;
+    background: linear-gradient(#e66465, #9198e5);
+    text-align: left;
+    margin: 2%;
+}
+
+.order-summary h1 {
+    padding: 2%;
+}
+
+.one {
+    display: flex;
+    flex-direction: row;
+    padding: 2%;
+}
+
+#month {
+    flex-grow: 1;
+    text-align: left;
+}
+
+#rupess {
+    text-align: right;
+}
+
+.two {
+    display: flex;
+    flex-direction: row;
+    padding: 2%;
+}
+
+#month1 {
+    flex-grow: 1;
+    text-align: left;
+}
+
+#rupess2 {
+    text-align: right;
+}
+
+.pics {
+    text-align: center;
+    margin: 3%;
+}
+
+.row1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.item1 {
+    border: 3px solid rgb(243, 75, 117);
+    border-radius: 15px;
+    padding: 5px 120px 15px 120px;
+}
+
+.item2 {
+    border: 3px solid rgb(243, 75, 117);
+    border-radius: 15px;
+    padding: 5px 120px 15px 120px;
+}
+
+.container {
+    text-align: center;
+    flex-direction: row;
+    padding: 5px 20px 15px 20px;
+    border-radius: 3px;
+}
+
+input[type=text] {
+    width: 20%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+label {
+    margin-bottom: 10px;
+}
+
+.checkbox {
+    text-align: center;
+}
