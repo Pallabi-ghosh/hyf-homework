@@ -1,0 +1,199 @@
+/* THIS IS JUST STARTING. HERE I PUT CSS RESET. ONLY FOR H1, P. */
+
+* body,
+html,
+h1,
+p {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font: 15px/1.5 Avenir Next;
+}
+
+
+/* THIS PART IS ABOUT NAVIGATION BAR */
+
+.navigation-bar {
+    display: flex;
+    width: 100%;
+    /* i'm assuming full width */
+    background-color: rgb(165, 233, 238);
+    /* change to desired color */
+}
+
+.logo {
+    justify-content: flex-start;
+    width: 100px;
+    padding-left: 4%;
+}
+
+.navbar {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 2%;
+}
+
+.search {
+    padding-right: 3%;
+    width: 20px;
+    height: 20px;
+}
+
+.buy {
+    width: 20px;
+    height: 20px;
+    padding-right: 3%;
+}
+
+a {
+    text-decoration: none;
+    padding-right: 3%;
+}
+
+
+/* THIS PART IS INCLUDE ONLINE FORM SETUP */
+
+
+/* this container holds everything this is main div- so its IMPORTANT */
+
+.form-container-firstpage {
+    width: 100%;
+    /* i'm assuming full width */
+    height: 50%;
+    /* change it to desired width */
+    background-color: white;
+    /* change to desired color */
+}
+
+
+/* details about how to sign up and why in our website */
+
+h1 {
+    font-weight: 500;
+    font-size: 2.5em;
+    /* 40px/16=2.5em */
+    margin: 2%;
+}
+
+.form-container-firstpage p {
+    text-align: justify;
+    margin: 2%;
+}
+
+h2 {
+    margin: 2%;
+}
+
+#one {
+    /* progress */
+    font-size: 1em;
+    font-weight: bold;
+    margin: 0;
+    padding-left: 2%;
+}
+
+
+/* this is progress bar -it will increase step by step */
+
+.progress-bar {
+    margin-bottom: 1rem;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 1px;
+    width: 90%;
+    height: 30px;
+    margin-left: 2%;
+}
+
+.progress-value {
+    background-color: rgb(165, 233, 238);
+    transition: 0.3s all linear;
+    height: 30px;
+    display: inline-block;
+    animation: progress 3s ease-in-out forwards;
+    -webkit-animation: progress 3s ease-in-out forwards;
+}
+
+
+/* animation */
+
+@keyframes progress {
+    from {
+        width: 0;
+    }
+    to {
+        width: 45%;
+    }
+}
+
+
+/* this container is about you */
+
+.container-email-phone {
+    flex-direction: row;
+    margin-left: 13%;
+}
+
+
+/* form stucture- input and select  */
+
+input[type=text],
+select {
+    width: 20%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+label {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+
+/* this container about country- which country are you belong */
+
+.container-password {
+    text-align: left;
+    margin-left: 10%;
+}
+
+
+/* your address and post code */
+
+.container-re-enter-password {
+    flex-direction: row;
+    margin-left: 3%;
+}
+
+
+/* this is next step button for stay connected with the next page */
+
+.container-submit {
+    text-align: right;
+    margin: 2%;
+}
+
+input[type=button] {
+    background-color: rgb(87, 204, 212);
+    color: black;
+    font-weight: bolder;
+    font-size: 30px;
+    padding: 30px 70px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=button]:hover {
+    background-color: rgb(24, 128, 136);
+}
+
+
+/* THIS PAGE IS END HERE. BUT IT WILL CONNECTED WITH THE NEXT PAGE. SO, STAY WITH ME. */

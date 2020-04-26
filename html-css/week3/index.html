@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" content="width=device-width, initial-scale=1.0">
+    <title>Hyf-firstweekhomework-week3</title>
+
+</head>
+
+<body>
+
+    <!--THIS IS HEADER. COMMENTS NOT DISPLAYED IN BROWSER-->
+
+    <header>
+        <div class="navigation-bar">
+            <div class="logo">
+                <img alt="logo" src="logonimages/amazon.svg">
+            </div>
+
+            <nav class="navbar">
+                <img class="search" src="logonimages/search.svg">
+                <img class="buy" src="logonimages/buy.svg">
+                <a href="#">About</a>
+            </nav>
+        </div>
+    </header>
+
+    <!--THIS IS CONTAINER FOR ONLINE FORM. COMMENTS NOT DISPLAYED IN BROWSER-->
+
+    <div class="form-container-firstpage">
+        <h1>Sign up in amazon.com</h1>
+        <p>We can't wait to help you improve your life-style and gain the attention from people around you!<br>
+
+            <br>Sign up below o save upto 70% on apparel, hand-bags and cosmetics. Our agents are busy picking the best offers that match your preferences nd style. Every week we will send you a hand-picked selection - we just need to know a few details
+            about your first...</p>
+
+        <h2>Step 1/4 - tell us who you are?</h2>
+        <p id="one">Progress</p>
+        <!--THIS IS PROGRESS BAR. COMMENTS NOT DISPLAYED IN BROWSER-->
+        <div class="progress-bar">
+            <span class="progress-value" style="width: 35%;"></span>
+        </div>
+        <p>Nice to meet you. Let's spend a minute to get o know each other? Please enter the following:</p>
+
+        <!--THIS IS CONTAINER FOR FIRST NAME N LAST NAME. COMMENTS NOT DISPLAYED IN BROWSER-->
+        <div class="container">
+            <form action="/action_page.php">
+                <div class="container-text">
+                    <label for="fname">First Name*</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+                    <label for="lname">Last Name*</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                </div>
+
+                <!--THIS IS CONTAINER FOR COUNTRY. COMMENTS NOT DISPLAYED IN BROWSER-->
+                <div class="container-country">
+                    <label for="country">Country*</label>
+                    <select id="country" name="country">
+                <option value="australia">Australia</option>
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+                </select>
+                </div>
+
+                <!--THIS IS CONTAINER FOR ADDRESS N POST CODE. COMMENTS NOT DISPLAYED IN BROWSER-->
+                <div class="container-address">
+                    <label for="fname">Street address*</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+                    <label for="lname">Post code*</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                </div>
+
+                <!--THIS IS CONTAINER FOR PROFILE DESCRIPTION N INPUT ABOUT YOURSELF. COMMENTS NOT DISPLAYED IN BROWSER-->
+                <div class="container-description">
+                    <div class="profile">
+                        <label for="subject">Profile description</label><br>
+                        <p>Please provide a short description of yourself to be displayed on our social community pages.</p>
+                    </div>
+                    <input type="text" id="fname">
+                </div>
+
+                <!--THIS IS CONTAINER FOR SHIPPING CHECKBOX WITH A TAG LINE. COMMENTS NOT DISPLAYED IN BROWSER-->
+                <div class="container-shipping">
+                    <p>Use the same address for billing and shipping? Uncheck below to fill out a separate shipping address.</p>
+                    <div class="shipping-checkbox">
+                        <label for="subject">Shipping address</label>
+                        <input type="checkbox" style="border:50px #00f;" />
+                    </div>
+                </div>
+
+
+                <!--THIS IS CONTAINER FOR NEXT STEP BUTTON. COMMENTS NOT DISPLAYED IN BROWSER-->
+                <div class="container-submit">
+                    <input type="button" class="button_active" onclick="location.href='page2.html';" value="Next Step" />
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!--WHEN YOU CLICK THE NEXT PAGE BUTTON, IT WILL CONECTED WITH OTHER PAGES. COMMENTS NOT DISPLAYED IN BROWSER-->
+</body>
+
+</html>

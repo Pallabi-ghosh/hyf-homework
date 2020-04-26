@@ -10,7 +10,7 @@ body {
 }
 
 
-/* container */
+/* Header */
 
 .Container {
     display: flex;
@@ -27,7 +27,7 @@ body {
     color: black;
 }
 
-.Container ul {
+.Container nav {
     display: flex;
     list-style-type: none;
     width: auto;
@@ -37,7 +37,7 @@ body {
 }
 
 
-/* intro */
+/* Gallery */
 
 .Introduction {
     position: relative;
