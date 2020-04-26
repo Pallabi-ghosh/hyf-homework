@@ -4,22 +4,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="text.css" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>sign up form</title>
+    <link rel="stylesheet" href="text.css">
 </head>
 
 <body>
-    <div class="container">
-        <div class="navbar-header">
-            <img src="Logo Icon3.png">
-        </div>
-        <ul class="navbar">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a class="nav-link">Experience</a></li>
-            <li><a class="nav-link"> Skills</a></li>
-            <li><a class="nav-link"> About</a></li>
-            <li><a class="nav-link"> Contact</a></li>
-        </ul>
+    <div class="sign-up">
+        <h1>Sign up</h1>
+        <p>Its quick and easy</p>
+    </div>
+    <div>
+        <form action="user.html" method="GET">
+            <div class="name">
+                <input type="text" name="First name" id="First Name" placeholder="First Name">
+                <input type="text" name="Last name" id="Last Name" placeholder="Last Name">
+            </div>
+            <div class="mobile-email">
+                <input type="text" name="Mobile no or Email" id="Mobile no or Email" placeholder="Mobile number or Email">
+            </div>
+            <div class="password">
+                <input type="text" name="New Password" id="New Password" placeholder="Password">
+            </div>
+            <div class="birthday">
+                <label for="">Birthday</label> Birthday <br>
+                <select name="month" id="month">
+        <option value="">jan</option>
+        <option value="">feb</option>
+        <option value="">Mar</option>
+        <option value="">april</option>
+        <option value="">Jun</option>
+        <option value="">July</option>
+    </select>
+                <select name="day" id="day">
+        <option value="">1</option>
+        <option value="">2</option>
+        <option value="">3</option>
+        <option value="">4</option>
+        <option value="">5</option>
+        <option value="">6</option>
+    </select>
+                <select name="year" id="year">
+        <option value="">2020</option>
+        <option value="">2019</option>
+        <option value="">2018</option>
+        <option value="">2017</option>
+        <option value="">2016</option>
+        <option value="">2015</option>
+    </select>
+            </div>
+            <div class="gender">
+                <label for="">Gender</label><br> Female
+                <input type="radio" name="gender" id="gender" value="male"> Male
+                <input type="radio" name="gender" id="gender" value="female"> Other
+                <input type="radio" name="gender" id="gender" value="Other">
+            </div>
+            <div></div>
+            <p id="one">By clicking in Sign up, you agree to our teams. learn how we collect, use and share your data in our data policy and how we use cookies and similar technology in our Cookies policy. You may recive SMS Notification from us and can opt out any
+                time </p>
+    </div>
+    <div class="button">
+        <button type="submit">Sign Up</button>
+    </div>
+    </div>
+
+    </form>
     </div>
 </body>
 

@@ -1,39 +1,41 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    background-color: whitesmoke;
 }
 
-body {
-    font: 15px/1.5 Avenir Next;
-    background-color: white;
+.sign-up {
+    width: 50%;
+    background-color: whitesmoke;
+    text-align: left;
+    margin: 2%;
 }
 
-.container {
-    display: flex;
+.name {
+    margin: 3%;
 }
 
-.navbar {
-    flex-grow: 1;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    padding-right: 3%;
-    list-style-type: none;
+.mobile-email {
+    margin: 3%;
 }
 
-.navbar>li {
-    margin-right: 10px;
-    list-style-type: none;
-    background-color: lightgreen;
+.password {
+    margin: 3%;
 }
 
-@media (max-width: 600px) {
-    .navbar {
-        flex-direction: column;
-        height: initial;
-    }
-    .navbar>li {
-        margin: 10px 0;
-    }
+.birthday {
+    margin: 3%;
+}
+
+.gender {
+    margin: 3%;
+}
+
+#one {
+    width: 50%;
+    margin: 2%;
+}
+
+.button {
+    margin: 3%;
 }

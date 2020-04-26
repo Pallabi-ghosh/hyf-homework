@@ -1,0 +1,8 @@
+<div id='resultsList'></div>
+<script>
+    const resultsList = document.getElementById('resultsList')
+    new URLSearchParams(window.location.search).forEach((value, name) => {
+        resultsList.append(`${name}: ${value}`)
+        resultsList.append(document.createElement('br'))
+    })
+</script>
