@@ -11,6 +11,7 @@
 
 <body>
 
+
     <!--THIS IS HEADER. COMMENTS NOT DISPLAYED IN BROWSER-->
 
     <header>
@@ -30,29 +31,30 @@
     <!--THIS IS CONTAINER FOR ONLINE FORM. COMMENTS NOT DISPLAYED IN BROWSER-->
 
     <div class="form-container-firstpage">
-        <h1>Sign up in amazon.com</h1>
-        <p>We can't wait to help you improve your life-style and gain the attention from people around you!<br>
+        <!--THIS IS FORM ACTION WHICH IS CONNECTED WITH USER.HTML AND METHOD SHOULD BE GET. COMMENTS NOT DISPLAYED IN BROWSER-->
+        <form action="user.html" method="GET">
+            <h1>Sign up with amazon.com</h1>
+            <p>We can't wait to help you improve your life-style and gain the attention from people around you!<br>
 
-            <br>Sign up below o save upto 70% on apparel, hand-bags and cosmetics. Our agents are busy picking the best offers that match your preferences nd style. Every week we will send you a hand-picked selection - we just need to know a few details
-            about your first...</p>
+                <br>Sign up below o save upto 70% on apparel, hand-bags and cosmetics. Our agents are busy picking the best offers that match your preferences nd style. Every week we will send you a hand-picked selection - we just need to know a few details
+                about your first...</p>
 
-        <h2>Step 1/4 - tell us who you are?</h2>
-        <p id="one">Progress</p>
-        <!--THIS IS PROGRESS BAR. COMMENTS NOT DISPLAYED IN BROWSER-->
-        <div class="progress-bar">
-            <span class="progress-value" style="width: 35%;"></span>
-        </div>
-        <p>Nice to meet you. Let's spend a minute to get o know each other? Please enter the following:</p>
+            <h2>Step 1/4 - tell us who you are?</h2>
+            <p id="one">Progress</p>
+            <!--THIS IS PROGRESS BAR. COMMENTS NOT DISPLAYED IN BROWSER-->
+            <div class="progress-bar">
+                <span class="progress-value"></span>
+            </div>
+            <p>Nice to meet you. Let's spend a minute to get o know each other? Please enter the following:</p>
 
-        <!--THIS IS CONTAINER FOR FIRST NAME N LAST NAME. COMMENTS NOT DISPLAYED IN BROWSER-->
-        <div class="container">
-            <form action="/action_page.php">
-                <div class="container-text">
-                    <label for="fname">First Name*</label>
-                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+            <!--THIS IS CONTAINER FOR FIRST NAME N LAST NAME. COMMENTS NOT DISPLAYED IN BROWSER-->
+            <div class="container">
 
-                    <label for="lname">Last Name*</label>
-                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                <div class="name">
+                    <label for="name">First Name*</label>
+                    <input type="text" name="First name" id="First Name" placeholder="First Name" required>
+                    <label for="name">Last Name*</label>
+                    <input type="text" name="Last name" id="Last Name" placeholder="Last Name" required>
                 </div>
 
                 <!--THIS IS CONTAINER FOR COUNTRY. COMMENTS NOT DISPLAYED IN BROWSER-->
@@ -61,6 +63,12 @@
                     <select id="country" name="country">
                 <option value="australia">Australia</option>
                 <option value="canada">Canada</option>
+                <option value="chili">Chili</option>
+                <option value="india">India</option>
+                <option value="china">China</option>
+                <option value="japan">Japan</option>
+                <option value="denmark">Denmark</option>
+                <option value="portugal">Portugal</option>
                 <option value="usa">USA</option>
                 </select>
                 </div>
@@ -68,37 +76,46 @@
                 <!--THIS IS CONTAINER FOR ADDRESS N POST CODE. COMMENTS NOT DISPLAYED IN BROWSER-->
                 <div class="container-address">
                     <label for="fname">Street address*</label>
-                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                    <input type="text" id="street address" name="street address" placeholder="Your address.." required>
 
-                    <label for="lname">Post code*</label>
-                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                    <label for="code">Post Code*</label>
+                    <input type="text" id="post code" name="post code" placeholder="3520" pattern="/^(?:[1-24-9]\d{3}|3[0-8]\d{2})$/" required>
                 </div>
 
                 <!--THIS IS CONTAINER FOR PROFILE DESCRIPTION N INPUT ABOUT YOURSELF. COMMENTS NOT DISPLAYED IN BROWSER-->
                 <div class="container-description">
                     <div class="profile">
-                        <label for="subject">Profile description</label><br>
-                        <p>Please provide a short description of yourself to be displayed on our social community pages.</p>
+                        <label for="subject">Profile description</label><br> Please provide a short <br>description of yourself to <br>be displayed on our<br> social community pages.
                     </div>
-                    <input type="text" id="fname">
+                    <input type="text" id="fname" name="profile description">
                 </div>
+
 
                 <!--THIS IS CONTAINER FOR SHIPPING CHECKBOX WITH A TAG LINE. COMMENTS NOT DISPLAYED IN BROWSER-->
                 <div class="container-shipping">
                     <p>Use the same address for billing and shipping? Uncheck below to fill out a separate shipping address.</p>
-                    <div class="shipping-checkbox">
-                        <label for="subject">Shipping address</label>
-                        <input type="checkbox" style="border:50px #00f;" />
+                    <label for="subject">Shipping address</label>
+                    <input type="checkbox" style="border:50px #00f;" />
+                    <div class="shipping-address">
+                        <label for="fname">Street address*</label>
+                        <input type="text" id="street address" name="street address" placeholder="Your address.." required>
+                        <label for="code">Post Code*</label>
+                        <input type="text" id="post code" name="post code" placeholder="3520" pattern="/^(?:[1-24-9]\d{3}|3[0-8]\d{2})$/" required>
                     </div>
                 </div>
+                <div class="button">
+                    <button type="submit">Sign Up</button>
+                </div>
+
 
 
                 <!--THIS IS CONTAINER FOR NEXT STEP BUTTON. COMMENTS NOT DISPLAYED IN BROWSER-->
                 <div class="container-submit">
                     <input type="button" class="button_active" onclick="location.href='page2.html';" value="Next Step" />
                 </div>
-            </form>
-        </div>
+
+            </div>
+        </form>
     </div>
 
     <!--WHEN YOU CLICK THE NEXT PAGE BUTTON, IT WILL CONECTED WITH OTHER PAGES. COMMENTS NOT DISPLAYED IN BROWSER-->

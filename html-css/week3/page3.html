@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="page3.css" content="width=device-width, initial-scale=1.0">
+    <title>Hyf-firstweekhomework-week3</title>
+
+</head>
+
+<body>
+
+    <!--THIS IS HEADER. COMMENTS NOT DISPLAYED IN BROWSER-->
+
+    <header>
+        <div class="navigation-bar">
+            <div class="logo">
+                <img alt="logo" src="logonimages/amazon.svg">
+            </div>
+
+            <nav class="navbar">
+                <img class="search" src="logonimages/search.svg">
+                <img class="buy" src="logonimages/buy.svg">
+                <a href="#">About</a>
+            </nav>
+        </div>
+    </header>
+
+    <!--THIS IS CONTAINER FOR ONLINE FORM AND PROGRESS BAR. COMMENTS NOT DISPLAYED IN BROWSER-->
+
+    <div class="form-container-firstpage">
+        <h1>Select your preferences in amazon.com</h1>
+        <h2>Step 3/4 - Time to learn about your preferences?</h2>
+        <p id="one">Progress</p>
+        <!--THIS IS PROGRESS BAR. COMMENTS NOT DISPLAYED IN BROWSER-->
+        <div class="progress-bar">
+            <span class="progress-value"></span>
+        </div>
+    </div>
+
+    <!--THIS IS  THE MAIN CONTAINER THAT YOU ARE INTERESTED. COMMENTS NOT DISPLAYED IN BROWSER-->
+    <div class="container">
+        <p>What kind of items are you interested in offers on?</p>
+        <form action="user.html" method="GET">
+            <!--THIS IS  THE CONTAINER FOR DIFFERENT ITEMS THAT YOU ARE INTERESTED. COMMENTS NOT DISPLAYED IN BROWSER-->
+            <div class="items">
+                <label for="apparal">Apparal</label>
+                <input type="checkbox" class="Checkbox" name="apparal" checked="checked">
+                <label for="jewellery">Jewellery</label>
+                <input type="checkbox" class="Checkbox" name="jewellery" checked="checked">
+                <label for="accessories">Accessories</label>
+                <input type="checkbox" class="Checkbox" name="accessories" checked="checked">
+                <label for="shoes">Shoes</label>
+                <input type="checkbox" class="Checkbox" name="shoes" checked="checked">
+                <label for="handbags">Handbags</label>
+                <input type="checkbox" class="Checkbox" name="handbags" checked="checked">
+            </div>
+
+
+            <!--THIS IS CONTAINER FOR IMAGES THAT YOU CAN SELECT OR CHOOSE. COMMENTS NOT DISPLAYED IN BROWSER-->
+            <div class="container-images">
+                <p>Choose the images that best resemble your style</p>
+
+                <!--THIS IS CONTAINER FOR IMAGES- FIRST DEVISION OF IMAGE GROUP. COMMENTS NOT DISPLAYED IN BROWSER-->
+                <div class="images">
+                    <img src="logonimages/rsz_image_4.jpg" alt="men-shoe" height="200px" width="200px">
+                    <input type="checkbox" class="Checkbox1" name="men-shoe-image" checked="checked">
+                    <img src="logonimages/rsz_1image_8.jpg" alt="headphons" height="200px" width="200px">
+                    <input type="checkbox" class="Checkbox1" name="headphons-image" checked="checked">
+                    <img src="logonimages/image 1.jpg" alt="handbags" height="200px" width="200px">
+                    <input type="checkbox" class="Checkbox1" name="handbags-image" checked="checked">
+                    <img src="logonimages/images 4.jpeg" alt="mens-shirt" height="200px" width="200px">
+                    <input type="checkbox" class="Checkbox1" name="mens-shirt-image" checked="checked">
+                </div>
+
+                <!--THIS IS CONTAINER FOR IMAGES- SECOND DIVISION OF IMAGE GROUP. COMMENTS NOT DISPLAYED IN BROWSER-->
+                <div class="images2">
+                    <img src="logonimages/rsz_image_5.jpg" alt="dress" height="200px" width="200px">
+                    <input type="checkbox" class="Checkbox1" name="dress-image" checked="checked">
+                    <img src="logonimages/rsz_image_6.jpg" alt="makeup" height="200px" width="200px">
+                    <input type="checkbox" class="Checkbox1" name="makeup-image" checked="checked">
+                    <img src="logonimages/rsz_image_7.jpg" alt="ladies-shoe" height="200px" width="200px">
+                    <input type="checkbox" class="Checkbox1" name="ladies-shoe-image" checked="checked">
+                    <img src="logonimages/rsz_image_2.jpg" alt="jewellery" height="200px" width="200px">
+                    <input type="checkbox" class="Checkbox1" name="jewellery-image" checked="checked">
+                </div>
+            </div>
+
+
+
+            <!--THIS IS SIGN UP BTN. COMMENTS NOT DISPLAYED IN BROWSER-->
+            <div class="button">
+                <button type="submit">Sign Up</button>
+            </div>
+
+
+            <!--THIS IS CONTAINER FOR NEXT STEP BUTTON. COMMENTS NOT DISPLAYED IN BROWSER-->
+            <div class="container-submit">
+                <input type="button" class="button_active" onclick="location.href='page4.html';" value="Next Step" />
+            </div>
+        </form>
+    </div>
+
+
+
+</body>

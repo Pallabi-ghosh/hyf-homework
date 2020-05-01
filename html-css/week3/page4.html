@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="page4.css" content="width=device-width, initial-scale=1.0">
+    <title>Hyf-firstweekhomework-week3</title>
+
+</head>
+
+<body>
+
+    <!--THIS IS HEADER. COMMENTS NOT DISPLAYED IN BROWSER-->
+
+    <header>
+        <div class="navigation-bar">
+            <div class="logo">
+                <img alt="logo" src="logonimages/amazon.svg">
+            </div>
+
+            <nav class="navbar">
+                <img class="search" src="logonimages/search.svg">
+                <img class="buy" src="logonimages/buy.svg">
+                <a href="#">About</a>
+            </nav>
+        </div>
+    </header>
+
+    <!--THIS IS CONTAINER FOR ONLINE FORM AND PROGRESS BAR. COMMENTS NOT DISPLAYED IN BROWSER-->
+
+    <div class="container-fourth-page">
+        <form action="user.html" method="GET">
+            <h1>Sign up with your customer details</h1>
+            <h2>Step 4/4 - Payment</h2>
+            <p id="one">Progress</p>
+            <!--THIS IS PROGRESS BAR. COMMENTS NOT DISPLAYED IN BROWSER-->
+            <div class="progress-bar">
+                <span class="progress-value"></span>
+            </div>
+
+
+            <!--THIS IS CONTAINER FOR PAYMENT DETAILS. COMMENTS NOT DISPLAYED IN BROWSER-->
+            <div class="payment-container">
+                <div id="small-text">
+                    <p>Please fill in your payment data</p>
+                </div>
+
+                <div class="card-name">
+                    <label for="cname">Name on Card*</label>
+                    <input type="text" id="cname" name="cardname" placeholder="Pallabi Ghosh Das" pattern="[0-9]{4} *[0-9]{6} *[0-9]{5}" required>
+                </div>
+                <div class="cards-type">
+                    <label for="cards">Card type*</label>
+                    <select id="cards" name="card type">
+                            <option value="debit card">Debit Card</option>
+                            <option value="credit card">Credit Card</option>
+                            <option value="ATM card">ATM Card</option>
+                        </select>
+                </div>
+                <div class="card">
+                    <label for="ccn">Credit Card Number*</label>
+                    <input type="text" id="ccn" inputmode="numeric" pattern="[0-9\s]{13,19}" autocomplete="cc-number" maxlength="19" placeholder="xxxx xxxx xxxx xxxx" required>
+                </div>
+                <div class="month-year">
+                    <label for="start">Start month*</label>
+                    <input type="text" id="start" name="start" pattern="(?:19|20)[0-9]{2}-(?:(?:0[1-9]|1[0-2])-(?:0[1-9]|1[0-9]|2[0-9])|(?:(?!02)(?:0[1-9]|1[0-2])-(?:30))|(?:(?:0[13578]|1[02])-31))" placeholder="2018-05" required>
+                    <label for="expyear">Exp Year*</label>
+                    <input type="text" id="expyear" name="expyear" pattern="(?:19|20)[0-9]{2}-(?:(?:0[1-9]|1[0-2])-(?:0[1-9]|1[0-9]|2[0-9])|(?:(?!02)(?:0[1-9]|1[0-2])-(?:30))|(?:(?:0[13578]|1[02])-31))" placeholder="2050" required>
+                </div>
+                <div class="cvv">
+                    <label for="cvv">CVV*</label>
+                    <input type="text" id="cvv" name="cvv" placeholder="352">
+                </div>
+
+            </div>
+            ​
+
+            <!--THIS IS SIGN UP BTN. COMMENTS NOT DISPLAYED IN BROWSER-->
+            <div class="button">
+                <button type="submit">Sign Up</button>
+            </div>
+
+
+            <!--THIS IS CONTAINER FOR NEXT STEP BUTTON. COMMENTS NOT DISPLAYED IN BROWSER-->
+            <div class="container-submit">
+                <input type="button" class="button_active" onclick="location.href='page4.html';" value="continue to checkout" />
+            </div>
+        </form>
+    </div>
+</body>

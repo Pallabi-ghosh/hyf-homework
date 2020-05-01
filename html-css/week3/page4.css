@@ -111,7 +111,7 @@ h2 {
     background-color: rgb(165, 233, 238);
     transition: 0.3s all linear;
     border-radius: 13px;
-    width: 55%;
+    width: 95%;
     height: 16px;
     display: inline-block;
     animation: progress 3s ease-in-out forwards;
@@ -123,23 +123,21 @@ h2 {
 
 @keyframes progress {
     from {
-        width: 30%;
+        width: 75%;
     }
     to {
-        width: 55%;
+        width: 95%;
     }
 }
 
 
-/* this container is about you */
+/* this container is about payment details  */
 
-.mobile-email {
-    flex-direction: row;
-    margin-left: 13%;
+.payment-container {
+    text-align: left;
+    flex-direction: column;
+    padding-top: 20px;
 }
-
-
-/* form stucture- input and select  */
 
 input[type=text],
 select {
@@ -153,40 +151,59 @@ select {
     resize: vertical;
 }
 
-input[type=password] {
-    width: 20%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize: vertical;
-}
-
 label {
     font-size: 15px;
     font-weight: 600;
+    margin-left: 2%;
 }
 
-
-/* this container about country- which country are you belong */
-
-.password {
+#small-text p {
     text-align: left;
-    margin-left: 11%;
+    margin-left: 2%;
 }
 
 
-/* your address and post code */
+/* this is card-name */
 
-.re-enter-password {
-    flex-direction: row;
-    margin-left: 6.5%;
+.card-name {
+    text-align: left;
+    margin-left: 13%;
 }
 
 
-/* submit button */
+/* this is cards-type */
+
+.cards-type {
+    text-align: left;
+    margin-left: 15.5%;
+}
+
+
+/* this is cards-number */
+
+.card {
+    text-align: left;
+    margin-left: 10%;
+}
+
+
+/* this is month-year */
+
+.month-year {
+    text-align: left;
+    margin-left: 14%;
+}
+
+
+/* this is cvv */
+
+.cvv {
+    text-align: left;
+    margin-left: 17.5%;
+}
+
+
+/* sign-up button */
 
 .button {
     text-align: center;
@@ -194,22 +211,10 @@ label {
 }
 
 
-/* this one is for newsletter radio */
-
-.newsletter {
-    flex-direction: row;
-    margin-left: 2%;
-}
-
-.newsletter1 label {
-    margin-left: 9%;
-}
-
-
 /* this is next step button for stay connected with the next page */
 
 .container-submit {
-    text-align: right;
+    text-align: center;
     margin: 2%;
 }
 
@@ -217,8 +222,8 @@ input[type=button] {
     background-color: rgb(87, 204, 212);
     color: black;
     font-weight: bolder;
-    font-size: 20px;
-    padding: 20px 40px;
+    font-size: 15px;
+    padding: 10px 20px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
@@ -229,4 +234,4 @@ input[type=button]:hover {
 }
 
 
-/* THIS PAGE IS END HERE. BUT IT WILL CONNECTED WITH THE NEXT PAGE. SO, STAY WITH ME. */
+/* THIS PAGE IS END HERE. NOW YOU PAY AND ENJOY. */

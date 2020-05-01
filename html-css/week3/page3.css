@@ -111,7 +111,7 @@ h2 {
     background-color: rgb(165, 233, 238);
     transition: 0.3s all linear;
     border-radius: 13px;
-    width: 55%;
+    width: 75%;
     height: 16px;
     display: inline-block;
     animation: progress 3s ease-in-out forwards;
@@ -123,86 +123,70 @@ h2 {
 
 @keyframes progress {
     from {
-        width: 30%;
+        width: 50%;
     }
     to {
-        width: 55%;
+        width: 75%;
     }
 }
 
 
-/* this container is about you */
+/* form stucture- items and interest  */
 
-.mobile-email {
-    flex-direction: row;
-    margin-left: 13%;
-}
-
-
-/* form stucture- input and select  */
-
-input[type=text],
-select {
-    width: 20%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize: vertical;
-}
-
-input[type=password] {
-    width: 20%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize: vertical;
-}
-
-label {
+label,
+input[type=checkbox] {
+    transform: scale(1);
     font-size: 15px;
     font-weight: 600;
+    margin-left: 2%;
+}
+
+p {
+    margin: 2%;
 }
 
 
-/* this container about country- which country are you belong */
+/* form stucture- items that you want offeres on */
 
-.password {
-    text-align: left;
-    margin-left: 11%;
-}
-
-
-/* your address and post code */
-
-.re-enter-password {
+.items {
     flex-direction: row;
-    margin-left: 6.5%;
 }
 
 
-/* submit button */
+/* form stucture- images that you can choose or select- first division */
+
+.images {
+    text-align: center;
+}
+
+.images img {
+    margin-left: 3%;
+}
+
+
+/* form stucture- images that you can choose or select- second division */
+
+.images2 {
+    text-align: center;
+    margin-top: 2%;
+}
+
+.images2 img {
+    margin-left: 3%;
+}
+
+input.Checkbox1 {
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+}
+
+
+/* sign-up button */
 
 .button {
     text-align: center;
     padding: 2%;
-}
-
-
-/* this one is for newsletter radio */
-
-.newsletter {
-    flex-direction: row;
-    margin-left: 2%;
-}
-
-.newsletter1 label {
-    margin-left: 9%;
 }
 
 
