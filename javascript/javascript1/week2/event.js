@@ -8,6 +8,8 @@ function remainder(addedTotalDays) {
     return addedTotalDays % 7;
 }
 
+
+
 function geteventweekday(daysToAddToTodaysDate) {
     //var answer = plusAnyDays(daysToAddToTodaysDate);
     var remainderForWeekCalculation = remainder(daysToAddToTodaysDate)
