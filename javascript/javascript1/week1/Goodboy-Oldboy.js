@@ -1,14 +1,14 @@
 //calculating the dog age//
 
-let dogYearOfBirth = 2017;
-let dogYearFuture = 2027;
-let humanYear = dogYearFuture - dogYearOfBirth;
+const dogYearOfBirth = 2017;
+const dogYearFuture = 2027;
+const humanYear = dogYearFuture - dogYearOfBirth;
 
 // js Boolean //
-let shouldShowResultInDogYears = false;
+const shouldShowResultInDogYears = true;
 
 if (shouldShowResultInDogYears == false) {
-    console.log(" Your dog will be ".concat(humanYear).concat(" human years old in ").concat(dogYearFuture))
+    console.log(" Your dog will be " + humanYear + " human years old in " + dogYearFuture)
 } else {
-    console.log(" Your dog will be ".concat(humanYear * 7).concat(" dog years old in ").concat(dogYearFuture))
+    console.log(" Your dog will be " + humanYear * 7 + " dog years old in " + dogYearFuture)
 }

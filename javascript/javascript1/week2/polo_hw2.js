@@ -23,14 +23,14 @@ var questions = [{
 
 
 
-function addproperty(choices) {
+function addproperty(t) {
     var i = 0;
-    while (i < choices.length) {
-        var obj = choices[i]
+    while (i < t.length) {
+        var obj = t[i]
         obj["userAnswer"] = null
         i++
     }
-    return choices;
+    return t;
 
 }
 console.log(addproperty(questions))

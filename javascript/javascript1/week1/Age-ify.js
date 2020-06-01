@@ -1,6 +1,6 @@
 //trying to calculate my age//
-let yearOfBirth = 1993;
-let yearFuture = 2045;
-let age = yearFuture - yearOfBirth;
+const yearOfBirth = 1993;
+const yearFuture = 2045;
+const age = yearFuture - yearOfBirth;
 
-console.log(" You will be ".concat(age).concat(" years old in 2045 "));
+console.log(" You will be " + age + " years old in 2045 ");
