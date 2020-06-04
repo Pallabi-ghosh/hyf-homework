@@ -83,10 +83,12 @@ var x = setInterval(function() {
 
 
 let todoItems = [];
+addTodo("Go Fishing");
+addTodo("singing in the shower")
 
 function addTodo(text) {
     const todo = {
-        text,
+        task: text,
         checked: false,
         id: Date.now(),
     };
