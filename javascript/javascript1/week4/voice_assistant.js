@@ -10,7 +10,7 @@ simpleMultiplication(4, 12)
 
 
 var date = new Date();
-console.log(date.toLocaleDateString('en-US'))
+console.log(date.toLocaleDateString('en-US'));
 
 
 
