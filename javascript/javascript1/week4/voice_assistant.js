@@ -9,23 +9,7 @@ function simpleMultiplication(c, d) {
 simpleMultiplication(4, 12)
 
 var date = new Date(Date.UTC(2012, 11, 20, 3, 0, 0));
-const numbers = command.match(/\d+/g);
-
-if (command === 'what day is it today?') {
-    return new Date().toLocaleDateString('en-US', {
-        day: 'numeric',
-        year: 'numeric',
-        month: 'long'
-    });
-}
-
 console.log(date.toLocaleDateString('en-US'));
-
-
-
-
-
-
 
 function startTimer(duration, display) {
     var timer = duration,
