@@ -8,17 +8,24 @@ function simpleMultiplication(c, d) {
 }
 simpleMultiplication(4, 12)
 
-var curday = function(sp) {
-    today = new Date();
-    var dd = today.getDate();
-    var mm = today.getMonth() + 1; //As January is 0.
-    var yyyy = today.getFullYear();
+var date = new Date(Date.UTC(2012, 11, 20, 3, 0, 0));
+const numbers = command.match(/\d+/g);
 
-    if (dd < 10) dd = '0' + dd;
-    if (mm < 10) mm = '0' + mm;
-    return (mm + sp + dd + sp + yyyy);
-};
-console.log(curday('/'));
+if (command === 'what day is it today?') {
+    return new Date().toLocaleDateString('en-US', {
+        day: 'numeric',
+        year: 'numeric',
+        month: 'long'
+    });
+}
+
+console.log(date.toLocaleDateString('en-US'));
+
+
+
+
+
+
 
 function startTimer(duration, display) {
     var timer = duration,
@@ -39,17 +46,17 @@ function startTimer(duration, display) {
 }
 
 
+const question = "hello my name is Benjamin";
+const commandWords = question.split(' ');
+
+
 function getReply(question) {
-    switch (question) {
-        case "Hello My Name is Benjamin":
-            console.log("Nice to meet you");
-            break;
-        case "What is my name":
-            console.log("Your name is Benjamin");
-            break;
+    if (question.startsWith('hello my name is Benjamin')) {
+        name = commandWords[commandWords.length - 1];
+        return `Nice to meet you ${name}`;
     }
 }
-getReply("This entry is a new question");
+console.log(getReply(question));
 
 
 
