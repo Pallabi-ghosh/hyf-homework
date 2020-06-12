@@ -15,4 +15,4 @@ const findShortestWordAmongMixedElements = array => {
 
 
 
-findShortestWordAmongMixedElements(danishWords); // returns 'ø'
+console.log(findShortestWordAmongMixedElements(danishWords)); // returns 'ø'
