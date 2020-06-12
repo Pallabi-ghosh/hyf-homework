@@ -1,14 +1,21 @@
 const danishString = ['Jeg har en blå bil'];
 //notThisFunctionName(danishString); // returns {total: 1, å: 1}
 
-function findShortestWord(str) {
-    var words = str.split(' ');
-    var shortest = words.reduce((shortestWord, currentWord) => {
-        return currentWord.length < shortestWord.length ? currentWord : shortestWord;
-    }, words[0]);
-    return shortest;
+var position = getbirdposition(danishString);
+
+function getbirdposition(danishString) {
+    var positionOfTheblå;
+    for (i = 0; i < danishString.length; i++) {
+        if (danishString[i] == 'blå') {
+            positionOfTheblå = i;
+            i = danishString.length;
+        }
+
+    }
+    return positionOfTheblå;
 }
-console.log(findShortestWord(danishString));
+console.log(position);
+
 
 
 
@@ -17,11 +24,5 @@ console.log(findShortestWord(danishString));
 const danishString2 = ['Blå grød med røde bær'];
 //notThisFunctionName(danishString2); // returns {total: 4, æ: 1, ø: 2, å: 1}
 
-function findShortestWord(str) {
-    var words = str.split(' ');
-    var shortest = words.reduce((shortestWord, currentWord) => {
-        return currentWord.length < shortestWord.length ? currentWord : shortestWord;
-    }, words[0]);
-    return shortest;
-}
-console.log(findShortestWord(danishString2));
+// console.log(danishString2.length);
+// danishString2.forEach((number, i) => console.log(`${number} is at index ${i}`));
