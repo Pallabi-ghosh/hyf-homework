@@ -1,24 +1,22 @@
-const firstNames = ["Hope", "Launa", "Katherine", "Walker", "Moses", "Tayna", "Rosia", "Yahaira", "Tommy", "Elwanda", "Clorinda", "Sheron", "Kayla", "Clementina", "Rene", "Rex", "Kathy", "Latoya", "Shirleen", "Shoshana"];
+const spiritAnimal = ["The fullmoon wolf", "Boring Chicken", " Lazy Lama", "Firceless Tiger", "Laughing Monkey", "Cute Cat", "A protector Dog", "Jungle big mouth Elephant", "Linked to creation Snake", "Dont judge me Rat", "Beautiful Dolphin", "Dont excit Dragon", "Explorer of the unknown Panther", "leopard", "Crezy and sharp Eagle", "Peace Dove", "Unfiend Unicorn", "Bring joy Butterfly", "King of water Starfish", "Dont look at me Tuna"];
+const buttonTag = document.getElementById('displayButton');
 
-const secondNames = ["Chauncey", "Houchins", "Lama", "Frasca", "Houston", "Ake", "Shankles", "Cantor", "Mizell", "Cleland", "Maltby", "Tirrell", "Cary", "Mace", "Horta", "Carlile", "Deegan", "Torrez", "Humfeld", "Helgeson"];
-
-const getRandomNumber = (max) => Math.floor(Math.random() * max);
-
-const getRandomName = () =>
-    `${firstNames[getRandomNumber(firstNames.length)]} ${secondNames[getRandomNumber(secondNames.length)]}`;
-
-const setRandomName = () => {
-    document.getElementById('random-name').innerText = getRandomName();
+function setRandomName() {
+    const randomNumber = Math.floor(Math.random() * spiritAnimal.length);
+    console.log(randomNumber);
+    const randomElement = spiritAnimal[randomNumber];
+    console.log(randomElement);
+    var name = document.getElementById("myText").value;
+    document.getElementById("demo").innerHTML = name + " " + randomElement;
+    return name;
 }
 
-document.getElementById('generate')
-    .addEventListener('click', setRandomName);
-
-setRandomName();
+if (buttonTag) {
+    buttonTag.addEventListener("click", myFunction);
+}
 
 function myFunction() {
     var x = document.getElementById("myText").value;
-
-    document.getElementById(
-        "demo").innerHTML = x;
+    document.getElementById("demo").innerHTML = x;
+    setRandomName();
 }
