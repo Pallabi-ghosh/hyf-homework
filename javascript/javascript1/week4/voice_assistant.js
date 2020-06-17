@@ -8,14 +8,8 @@ function simpleMultiplication(c, d) {
 }
 simpleMultiplication(4, 12)
 
-
-var date = new Date();
+var date = new Date(Date.UTC(2012, 11, 20, 3, 0, 0));
 console.log(date.toLocaleDateString('en-US'));
-
-
-
-
-
 
 function startTimer(duration, display) {
     var timer = duration,
@@ -36,17 +30,17 @@ function startTimer(duration, display) {
 }
 
 
+const question = "hello my name is Benjamin";
+const commandWords = question.split(' ');
+
+
 function getReply(question) {
-    switch (question) {
-        case "Hello My Name is Benjamin":
-            console.log("Nice to meet you");
-            break;
-        case "What is my name":
-            console.log("Your name is Benjamin");
-            break;
+    if (question.startsWith('hello my name is Benjamin')) {
+        name = commandWords[commandWords.length - 1];
+        return `Nice to meet you ${name}`;
     }
 }
-getReply("This entry is a new question");
+console.log(getReply(question));
 
 
 
