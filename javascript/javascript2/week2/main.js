@@ -4,6 +4,11 @@ const products = getAvailableProducts();
 const productsUl = document.querySelector('section.products ul');
 console.log(productsUl);
 
+productsUl.addEventListener("click", renderProducts);
+
+const result = products.filter(preWords => preWords.length > 6);
+console.log(result);
+
 function renderProducts(products) {
     products.forEach(product => {
         const li = document.createElement('li');
