@@ -4,19 +4,32 @@ const products = getAvailableProducts();
 const productsUl = document.querySelector('section.products ul');
 console.log(productsUl);
 
-productsUl.addEventListener("click", renderProducts);
+const input = document.querySelector('input');
+input.addEventListener('input', addtext);
 
-const result = products.filter(preWords => preWords.length > 6);
-console.log(result);
+function addtext() {
+    let inputadd = document.querySelector('input');
+    let addedtext = inputadd.value;
 
-function renderProducts(products) {
-    products.forEach(product => {
-        const li = document.createElement('li');
+    // if (addedtext == '') {
+    //     alert('please add some text');
+    //     return;
+    // } else {
+    //     li.innerHTML = tags;
+    //     document.querySelector('ul').appendChild(li);
+    // }
+    const result = products.filter(product => product.name.toLowerCase().includes(addedtext.toLowerCase()));
+    console.log(result);
 
-        let shipsToHTML = '';
-        product.shipsTo.forEach(country => shipsToHTML += `<li>${country}</li>`);
+    function renderProducts(products) {
+        productsUl.innerHTML = ''
+        products.forEach(product => {
+            const li = document.createElement('li');
 
-        li.innerHTML = `
+            let shipsToHTML = '';
+            product.shipsTo.forEach(country => shipsToHTML += `<li>${country}</li>`);
+
+            li.innerHTML = `
             <ul>
                 <li>${product.name}</li>
                 <li>${product.price}</li>
@@ -24,8 +37,9 @@ function renderProducts(products) {
                 <ul class="ships-to">${shipsToHTML}</ul>
             </ul>
         `;
-        productsUl.appendChild(li);
-    });
-}
+            productsUl.appendChild(li);
+        });
+    }
 
-renderProducts(products);
+    renderProducts(result);
+}
