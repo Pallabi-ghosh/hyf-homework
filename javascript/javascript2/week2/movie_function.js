@@ -1,3 +1,6 @@
+const movies = [{ "title": "'71", "year": 2014, "rating": 7.2, "votes": 41702, "running_times": 5940 }, { "title": "'A' gai wak", "year": 1983, "rating": 7.4, "votes": 11942, "running_times": 6300 }, { "title": "'Breaker' Morant", "year": 1980, "rating": 7.9, "votes": 10702, "running_times": 6420 }, { "title": "'Crocodile' Dundee II", "year": 1988, "rating": 5.5, "votes": 47180, "running_times": 6480 }]
+
+
 function findShortest(movies) {
     return movies.reduce(function(prevWord, currWord) {
         if (currWord.length < prevWord.length) {
