@@ -49,3 +49,17 @@ console.log(movieRatings);
 
 const reducer = (accumulator, currentValue) => accumulator + currentValue;
 console.log(movieRatings.reduce(reducer));
+
+//Total Number of Movies containig Keywords (SURFER, ALIEN, BENJAMIN)
+
+const moviesWithSpecialWords = (title, filter) => {
+    return title.filter((filter) => {
+        const movieFilter = !filter.movies || listing.movies.includes('benjamin')
+        return movie
+    })
+}
+
+const filter = {
+    type: 'surfer',
+};
+console.log(moviesWithSpecialWords)
