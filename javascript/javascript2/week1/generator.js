@@ -1,5 +1,5 @@
 const spiritAnimal = ["The fullmoon wolf", "Boring Chicken", " Lazy Lama", "Firceless Tiger", "Laughing Monkey", "Cute Cat", "A protector Dog", "Jungle big mouth Elephant", "Linked to creation Snake", "Dont judge me Rat", "Beautiful Dolphin", "Dont excit Dragon", "Explorer of the unknown Panther", "leopard", "Crezy and sharp Eagle", "Peace Dove", "Unfiend Unicorn", "Bring joy Butterfly", "King of water Starfish", "Dont look at me Tuna"];
-const buttonTag = document.getElementById('displayButton');
+const buttonElement = document.getElementById('displayButton');
 
 function setRandomName() {
     const randomNumber = Math.floor(Math.random() * spiritAnimal.length);
@@ -11,8 +11,8 @@ function setRandomName() {
     return name;
 }
 
-if (buttonTag) {
-    buttonTag.addEventListener("click", myFunction);
+if (buttonElement) {
+    buttonElement.addEventListener("click", myFunction);
 }
 
 function myFunction() {
