@@ -7,7 +7,7 @@ function geoFindMe() {
     mapLink.href = '';
     mapLink.textContent = '';
 
-    function success(position) {
+    function printLocation(position) {
         const latitude = position.coords.latitude;
         const longitude = position.coords.longitude;
 
@@ -24,7 +24,7 @@ function geoFindMe() {
         status.textContent = 'Geolocation is not supported by your browser';
     } else {
         status.textContent = 'Locating…';
-        navigator.geolocation.getCurrentPosition(success, error);
+        navigator.geolocation.getCurrentPosition(printLocation, error);
     }
 
 }
