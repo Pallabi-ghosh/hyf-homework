@@ -1,6 +1,6 @@
 "use strict"
 
-var loc;
+const loc;
 
 var element = document.createElement("button");
 element.appendChild(document.createTextNode("Click here"));
