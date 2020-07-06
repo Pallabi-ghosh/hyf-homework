@@ -1,0 +1,27 @@
+html {
+    height: 100vh;
+    width: 100vw;
+}
+
+body {
+    background-size: cover;
+    background-color: aqua;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    text-align: center;
+    line-height: 1;
+    font-family: 'proximanova', "Montserrat", "sans-serif";
+}
+
+.title {
+    text-align: center;
+    font-weight: 200;
+    margin-top: 50px;
+}
+
+.container {
+    margin-top: 90px;
+}

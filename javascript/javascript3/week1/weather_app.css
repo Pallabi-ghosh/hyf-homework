@@ -1,0 +1,11 @@
+.container {
+    height: 100%;
+    width: 100%;
+    background: url("photo-of-buildings-near-body-of-water-2779863.jpg");
+    background-size: cover;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    text-align: center;
+    font-family: 'proximanova', "Montserrat", "sans-serif";
+}
