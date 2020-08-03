@@ -16,7 +16,8 @@ const fetchData = (name) => {
 names.map(fetchData)
 console.log(promises)
 
-const myClassmatesApi = () => {
+
+const myApi = () => {
     return Promise.all(promises)
         .then(responses => {
             const data = responses.map(response => response.json())
