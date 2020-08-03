@@ -10,7 +10,7 @@ timeout(3000).then(function() {
 
 
 function getCurrentLocation() {
-    .then(function(position) {
+    then(function(position) {
             return position.text('I am called asynchronously');
         })
         .catch((error) => {

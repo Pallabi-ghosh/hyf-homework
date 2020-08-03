@@ -14,15 +14,13 @@ fetch("http://api.open-notify.org/astros.json")
         return response.text();
     })
     .then(function(text) {
-        // ...and here's the content of the remote file
-        alert(text); // {"name": "iliakan", "isAdmin": true}
+        alert(text);
     });
 
 
 // async way
 async function getData() {
     try {
-        const h1Element = document.getElementsByTagName('h1')
         const response = await fetch("http://api.open-notify.org/astros.json");
         const stringify = await response.json();
         console.log(stringify)

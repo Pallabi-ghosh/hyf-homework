@@ -48,12 +48,6 @@
     }
 
 
-    /**
-     * @param {DOMelement} boxToMove - A DOM element of the box to move
-     * @param {Position} newPosition - An object specifying the new position of the box. x, y
-     * @return {Promise<any>}
-     */
-
     function moveElement(boxToMove, newPosition) {
         return new Promise(resolve => {
             boxToMove.style.transform = `translate(${newPosition.x}px, ${newPosition.y}px)`;
