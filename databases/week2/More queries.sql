@@ -1,5 +1,3 @@
--- Part 3: More queries --
-
 -- More queries --
 
 SET NAMES utf8mb4;
@@ -49,12 +47,15 @@ FROM
 
 -- Get all taks for 'Donald Duck' where status 'not started' -- 
 SELECT 
-    *
+    task.*
 FROM
     user,
-    status    
+    task,
+    status
 WHERE
-    user.name LIKE '%Donald Duck%'
+    user.name = 'Donald Duck'
+        AND user.id = task.user_id
+        AND status.id = task.status_id
         AND status.name = 'Not started';
 
 
