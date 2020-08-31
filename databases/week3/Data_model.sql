@@ -129,13 +129,16 @@ WHERE
     
 -- Get meals that still has available reservations --
 SELECT 
-    Meal.*
+    m.id AS meal_id,
+    m.max_reservations,
+    r.created_date,
+    SUM(r.number_of_guests)
 FROM
-    Meal,
-    Reservation
-WHERE
-    Meal.max_reservations > Reservation.number_of_guests
-        AND Meal.id = Reservation.meal_id;
+    reservation AS r
+        LEFT JOIN
+    meal AS m ON m.id = r.meal_id
+GROUP BY r.meal_id , r.created_date
+HAVING m.max_reservations < SUM(r.number_of_guests);
         
 -- Get meals that partially match a title. Rød grød med will match the meal with the title Rød grød med fløde --
 SELECT *
@@ -156,13 +159,17 @@ WHERE
 SELECT * from meal  limit 5;
 
 -- Get the meals that have good reviews --
-SELECT meal.*
+
+SELECT 
+    m.id, m.title, ROUND(AVG(r.stars)) AS avg_stars
 FROM
-    meal,
-    review
+    meal AS m,
+    review AS r
 WHERE
-    review.stars > 3
-        AND meal.id = review.meal_id;
+    m.id = r.meal_id
+GROUP BY m.id
+HAVING AVG(stars) > 30;
+
         
 -- Get reservations for a specific meal sorted by created_date --
 SELECT 
@@ -172,13 +179,14 @@ FROM
 ORDER BY created_date DESC;
 
 -- Sort all meals by average number of stars in the reviews --
-SELECT meal.*
+SELECT 
+    m.id, m.title, ROUND(AVG(r.stars)) AS avg_stars
 FROM
-    meal,
-    review
+    meal AS m,
+    review AS r
 WHERE
-    review.stars < 3
-        AND meal.id = review.meal_id;
+    m.id = r.meal_id
+GROUP BY m.id;
 
 
 
