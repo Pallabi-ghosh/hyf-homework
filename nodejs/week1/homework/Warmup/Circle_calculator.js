@@ -1,4 +1,4 @@
-function circle(radius) {
+function Circle(radius) {
     this.radius = radius;
     // getArea method
     this.area = function() {

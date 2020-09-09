@@ -1,6 +1,6 @@
 // Respond with the json for all the meals (including it's reviews) that are cheap (you define what a cheap meal is)
 const express = require("express");
-const app = express();
+const router = express.Router();
 
 
 
@@ -14,9 +14,14 @@ cheapMeals.map(everymeal => {
     return everymeal;
 });
 
-
+/*
+// Replace this: 
 app.get("/cheap-meals", (request, response) => {
     response.send(cheapMeals);
 });
+*/
 
-module.exports = app;
+// with this:
+router.get("/", (request, response) => response.send(cheapMeal));
+
+module.exports = router;
