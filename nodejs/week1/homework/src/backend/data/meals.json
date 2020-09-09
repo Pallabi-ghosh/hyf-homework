@@ -1,0 +1,33 @@
+[{
+        "id": 1,
+        "title": "Italian food in the summer",
+        "maxNumberOfGuests": 3,
+        "description": "Dinner with some delicious italian food",
+        "createdAt": "2020/12/7 14:34",
+        "price": 100
+    },
+    {
+        "id": 2,
+        "title": "Danish food in the summer",
+        "maxNumberOfGuests": 5,
+        "description": "A lunch with bread and wine",
+        "createdAt": "2020/09/06 10:10",
+        "price": 90
+    },
+    {
+        "id": 3,
+        "title": "Chicken tikka masala",
+        "maxNumberOfGuests": 6,
+        "description": "chicken masala gravy with some unique spices",
+        "createdAt": "2019/02/17 11:14",
+        "price": 70
+    },
+    {
+        "id": 4,
+        "title": "Pasta",
+        "maxNumberOfGuests": 1,
+        "description": "meatball pasta",
+        "createdAt": "2021/02/19 10:22",
+        "price": 150
+    }
+]
