@@ -8,8 +8,8 @@ const knex = require("../database");
 router.get("/", async(request, response) => {
     try {
         // knex syntax for selecting things. Look up the documentation for knex for further info
-        const titles = await knex("Review").select("title");
-        response.json(titles);
+        const reviewTitles = await knex("Review").select("title");
+        response.json(reviewTitles);
     } catch (error) {
         throw error;
     }
@@ -66,7 +66,7 @@ const getReview = async({ id }) => {
 // api/review/{id}	PUT	Updates the review by id	PUT api/review/2
 
 router.put("/:id", async(request, response) => {
-    editReview({
+    updateReview({
             body: request.body,
             id: request.params.id,
         })
@@ -78,7 +78,7 @@ router.put("/:id", async(request, response) => {
 });
 
 
-const editReview = async({ body, id }) => {
+const updateReview = async({ body, id }) => {
     const { title, description, meal_id, stars, created_date } = body;
     const contact = await knex.from("Review").select("*").where({
         id: id,
