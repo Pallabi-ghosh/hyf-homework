@@ -3,22 +3,22 @@ const router = express.Router();
 const knex = require("../database");
 
 
-// api/meals/	GET	Returns all meals	GET api/meals/
+// api/review/	GET	Returns all review	GET api/review/
 
 router.get("/", async(request, response) => {
     try {
         // knex syntax for selecting things. Look up the documentation for knex for further info
-        const titles = await knex("Meal").select("title");
+        const titles = await knex("Review").select("title");
         response.json(titles);
     } catch (error) {
         throw error;
     }
 });
 
-// api/meals/	POST	Adds a new meal	POST api/meals/
+// api/review/	POST	Adds a new meal	POST api/review/
 
 router.post("/", async(request, response) => {
-    createMeal({
+    createReview({
             body: request.body,
         })
         .then((result) => response.json(result))
@@ -28,24 +28,21 @@ router.post("/", async(request, response) => {
         });
 });
 
-const createMeal = async({ body }) => {
-    const { id, title, description, location, when, max_reservations, price, created_date } = body;
-    return await knex("Meal").insert({
-        id: id,
+const createReview = async({ body }) => {
+    const { title, description, meal_id, stars, created_date } = body;
+    return await knex("Review").insert({
         title: title,
-        location: location,
         description: description,
-        when: when,
-        max_reservations: max_reservations,
-        price: price,
+        meal_id: meal_id,
+        stars: stars,
         created_date: created_date,
     });
 };
 
-// api/meals/{id}	GET	Returns meal by id	GET api/meals/2
+// api/review/{id}	GET	Returns review by id	GET api/review/2
 
 router.get("/:id", async(request, response) => {
-    getMeal({
+    getReview({
             id: request.params.id,
         })
         .then((result) => response.json(result))
@@ -55,8 +52,8 @@ router.get("/:id", async(request, response) => {
         });
 });
 
-const getMeal = async({ id }) => {
-    const contact = await knex.from("Meal").select("*").where({
+const getReview = async({ id }) => {
+    const contact = await knex.from("Review").select("*").where({
         id: id,
     });
     if (contact.length === 0) {
@@ -66,10 +63,10 @@ const getMeal = async({ id }) => {
 
 
 
-// api/meals/{id}	PUT	Updates the meal by id	PUT api/meals/2
+// api/review/{id}	PUT	Updates the review by id	PUT api/review/2
 
 router.put("/:id", async(request, response) => {
-    editMeal({
+    editReview({
             body: request.body,
             id: request.params.id,
         })
@@ -81,9 +78,9 @@ router.put("/:id", async(request, response) => {
 });
 
 
-const editMeal = async({ body, id }) => {
-    const { title, description, location, when, max_reservations, price, created_date } = body;
-    const contact = await knex.from("Meal").select("*").where({
+const editReview = async({ body, id }) => {
+    const { title, description, meal_id, stars, created_date } = body;
+    const contact = await knex.from("Review").select("*").where({
         id: id,
     });
     if (contact.length === 0) {
@@ -91,15 +88,13 @@ const editMeal = async({ body, id }) => {
     }
     const queryDto = {
         title: title,
-        location: location,
         description: description,
-        when: when,
-        max_reservations: max_reservations,
-        price: price,
+        meal_id: meal_id,
+        stars: stars,
         created_date: created_date,
     };
     if (Object.keys(queryDto).length !== 0) {
-        return await knex("Meal")
+        return await knex("Review")
             .where({
                 id: id,
             })
@@ -109,10 +104,10 @@ const editMeal = async({ body, id }) => {
 
 
 
-// api/meals/{id}	DELETE	Deletes the meal by id	DELETE meals/2
+// api/review/{id}	DELETE	Deletes the review by id	DELETE review/2
 
 router.delete("/:id", async(request, response) => {
-    deleteMeal({
+    deleteReview({
             deleteId: request.params.id,
         })
         .then((result) => response.json(result))
@@ -123,12 +118,12 @@ router.delete("/:id", async(request, response) => {
 });
 
 
-const deleteMeal = async({ deleteId }) => {
+const deleteReview = async({ deleteId }) => {
     try {
         if (!deleteId) {
             throw new HttpError("Bad request", "Id not found", 400);
         }
-        return knex("Meal")
+        return knex("Review")
             .where({
                 id: deleteId,
             })
@@ -138,6 +133,5 @@ const deleteMeal = async({ deleteId }) => {
         return "something went wrong, try again";
     }
 };
-
 
 module.exports = router;
