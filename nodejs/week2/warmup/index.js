@@ -1,9 +1,9 @@
-const express = require('express');
+const express = require("express");
 const app = express();
 const port = 3001;
 
-app.get('/', (request, response) => {
-    response.send("Example app listening on port 3001!")
+app.get("/", (request, response) => {
+  response.send("Example app listening on port 3001!");
 });
 
 /*
@@ -16,39 +16,37 @@ Use req.query and req.params properties on req object.
 */
 
 //USing req.Query
-app.get('/numbers/add', (request, response) => {
-    const theSum = Number(firstNumber) + Number(secondNumber);
-    if (firstNumber && secondNumber) {
-        response.send(`Input a number`);
-    } else {
-        response.send(`the answer is ${theSum}`);
-    }
+app.get("/numbers/add", (request, response) => {
+  const theSum =
+    Number(request.query.firstNumber) + Number(request.query.secondNumber);
+  if (request.query.firstNumber && request.query.secondNumber) {
+    response.send(`Input a number`);
+  } else {
+    response.send(`the answer is ${theSum}`);
+  }
 });
 
-app.get('/numbers/multiply', (request, response) => {
-    const multiplication = Number(firstNumber) * Number(secondNumber);
-    if (firstNumber && secondNumber) {
-        response.send(`Input a number`);
-    } else {
-
-        response.send(`the answer is ${multiplication}`);
-    };
+app.get("/numbers/multiply", (request, response) => {
+  const multiplication =
+    Number(request.query.firstNumber) * Number(request.query.secondNumber);
+  if (request.query.firstNumber && request.query.secondNumber) {
+    response.send(`Input a number`);
+  } else {
+    response.send(`the answer is ${multiplication}`);
+  }
 });
-
 
 //Using req.params
-app.get('/numbers/multiply', (request, response) => {
-    const multiply = Number(request.params.firstNumber) * Number(request.params.secondNumber);
-    if (firstNumber && secondNumber) {
-        response.send(`Input a number`);
-    } else {
-
-        response.send(`the answer is ${multiply}`);
-    };
+app.get("/numbers/multiply/:firstNumber/:secondNumber", (request, response) => {
+  const multiply =
+    Number(request.params.firstNumber) * Number(request.params.secondNumber);
+  if (firstNumber && secondNumber) {
+    response.send(`Input a number`);
+  } else {
+    response.send(`the answer is ${multiply}`);
+  }
 });
 
-
-
 app.listen(port, () => {
-    console.log("Example app listening on port 3001!");
+  console.log("Example app listening on port 3001!");
 });
