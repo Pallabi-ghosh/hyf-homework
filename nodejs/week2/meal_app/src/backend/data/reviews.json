@@ -1,0 +1,29 @@
+[{
+        "id": 1,
+        "numberOfStars": 5,
+        "content": "Wonderfull meal",
+        "mealId": 1,
+        "createdAt": 1207
+    },
+    {
+        "id": 2,
+        "numberOfStars": 4,
+        "content": "quite a good meal",
+        "mealId": 2,
+        "createdAt": 5008
+    },
+    {
+        "id": 3,
+        "numberOfStars": 3,
+        "content": "nice meal",
+        "mealId": 2,
+        "createdAt": 24567
+    },
+    {
+        "id": 4,
+        "numberOfStars": 2,
+        "content": "not up to the mark food",
+        "mealId": 3,
+        "createdAt": 13458
+    }
+]
