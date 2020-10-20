@@ -1,31 +1,20 @@
 import React, { Component } from "react";
 
 class TodoItem extends Component {
-  constructor() {
-    super();
-
-    this.onMarkItemComplete = (event) => {
-      this.props.markItemComplete(this.props.id);
-    };
-
-    this.onDeleteItem = (event) => {
-      this.props.deleteItem(this.props.id);
-    };
-  }
   render() {
+    const { deleteItem, id, markItemComplete, status, task } = this.props;
     const itemClass =
-      "isItemCompleted-" + (this.props.status ? "done" : "undone");
-
+      "isItemCompleted-" + (status ? "done" : "undone");
     return (
       <div className="container-fluid">
         <div className="item">
-          <input type="checkbox" onChange={this.onMarkItemComplete} />
-          <span className={itemClass}> {this.props.task} </span>
+          <input type="checkbox" onChange={() => markItemComplete(id)} />
+          <span className={itemClass}> {task} </span>
           <button
             style={{ float: "right", marginTop: "-4px" }}
             type="button"
             className="btn btn-danger btn-sm"
-            onClick={this.onDeleteItem}
+            onClick={() => deleteItem(id)}
           >
             Delete
           </button>
