@@ -16,7 +16,7 @@ function Todo({ todo }) {
 }
 
 function App() {
-  const [todos, setTodos] = React.useState([
+  const todos= ([
     {
       task: "Get out of bed",
       deadline: " Wed Sep 13 2017",
