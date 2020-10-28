@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 
 class TodoItem extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
 
     this.onMarkItemComplete = (event) => {
       this.props.markItemComplete(this.props.id);
