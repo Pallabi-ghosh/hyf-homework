@@ -31,11 +31,6 @@ class App extends React.Component {
       alert("An error occurred while trying to load Google Map");
     };
   }
-// Show the infowindow when a place is clicked
-  handleInfoWindow = clickedCafe => {
-    this.setState({ clickedPlace: clickedCafe });
-    this.setState({ menuHidden: false });
-  };
 
   render() {
     console.log(this.state.users);
