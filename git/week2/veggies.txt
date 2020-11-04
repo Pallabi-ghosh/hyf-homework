@@ -1,6 +1,7 @@
 carrot.
 broccoli.
 green pepper.
+pumpkin.
 cauliflower.
 corn.
 cucumber.
